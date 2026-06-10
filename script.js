@@ -1,6 +1,6 @@
 // script.js - Portfolio Interactivity & Cat Companion Engine
 
-document.addEventListener('DOMContentLoaded', () => {
+const initPortfolio = () => {
     // --- Preloader Fade Out ---
     const preloader = document.getElementById('preloader');
     if (preloader) {
@@ -423,6 +423,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
+
     // --- MOTION GRAPHICS: SCROLL REVEAL (IntersectionObserver) ---
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
     
@@ -518,6 +520,13 @@ document.addEventListener('DOMContentLoaded', () => {
             animateOut();
         });
     }
-});
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPortfolio);
+} else {
+    initPortfolio();
+}
+
 
 
