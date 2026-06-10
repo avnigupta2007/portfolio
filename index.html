@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avni Gupta | UX/UI Designer &amp; Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Avni Gupta, a UX/UI Designer, Full Stack Web Developer in training, and Content Creator. Crafting cute, professional, and minimalistic digital experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Preloader Overlay -->
+    <div id="preloader" class="preloader-overlay">
+        <div class="loader">
+            <div class="cell d-0"></div>
+            <div class="cell d-1"></div>
+            <div class="cell d-2"></div>
+            <div class="cell d-1"></div>
+            <div class="cell d-2"></div>
+            <div class="cell d-2"></div>
+            <div class="cell d-3"></div>
+            <div class="cell d-3"></div>
+            <div class="cell d-4"></div>
+        </div>
+    </div>
+
+    <!-- Faint background tech grid -->
+    <div class="tech-grid"></div>
+
+    <!-- Background glowing orbs -->
+    <div class="glow-orb" id="glowOrb1"></div>
+    <div class="glow-orb" id="glowOrb2"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                avni.design
+            </a>
+            <nav class="nav">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="hubrave.html" class="nav-link">Hubrave</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#sandbox" class="nav-link">Sandbox</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#contact" class="nav-link nav-btn">Get in Touch</a>
+            </nav>
+            <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="hubrave.html" class="mobile-link">Hubrave</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#sandbox" class="mobile-link">Sandbox</a>
+        <a href="#journey" class="mobile-link">Journey</a>
+        <a href="#contact" class="mobile-link mobile-btn">Get in Touch</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge reveal">
+                        <span class="pulse"></span>
+                        Available for select projects
+                    </div>
+                    <h1 class="hero-title reveal delay-100">
+                        Designing systems.<br>
+                        Writing <span class="gradient-text">functional code.</span>
+                    </h1>
+                    <p class="hero-subtitle reveal delay-200">
+                        Hi, I'm <strong>Avni Gupta</strong>. Co-founder of <a href="https://hubrave.vercel.app/" target="_blank" class="hero-inline-link">Hubrave Agency</a>. I bridge the gap between UX/UI design and full-stack development. I build elegant design systems, write clean code, and document my creative journey.
+                    </p>
+                    <div class="hero-actions reveal delay-300">
+                        <a href="#work" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Connect</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal delay-100">
+                    <div class="profile-card tilt-card">
+                        <div class="profile-bg-deco tilt-inner"></div>
+                        <img src="assets/avni_profile.png" alt="Avni Gupta profile" class="profile-image tilt-inner"
+                            id="profileImage">
+
+                        <div class="profile-status tilt-inner">
+                            <span class="status-indicator"></span>
+                            <span class="status-text" id="statusMessage">Building NextJS apps...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Marquee -->
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <span>UX/UI DESIGN</span> <span class="marquee-bullet">•</span>
+                    <span>FRONTEND DEVELOPMENT</span> <span class="marquee-bullet">•</span>
+                    <span>REACT &amp; NEXT.JS</span> <span class="marquee-bullet">•</span>
+                    <span>DESIGN SYSTEMS</span> <span class="marquee-bullet">•</span>
+                    <span>CONTENT CREATION</span> <span class="marquee-bullet">•</span>
+                    <span>USER RESEARCH</span> <span class="marquee-bullet">•</span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span>UX/UI DESIGN</span> <span class="marquee-bullet">•</span>
+                    <span>FRONTEND DEVELOPMENT</span> <span class="marquee-bullet">•</span>
+                    <span>REACT &amp; NEXT.JS</span> <span class="marquee-bullet">•</span>
+                    <span>DESIGN SYSTEMS</span> <span class="marquee-bullet">•</span>
+                    <span>CONTENT CREATION</span> <span class="marquee-bullet">•</span>
+                    <span>USER RESEARCH</span> <span class="marquee-bullet">•</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects (Work) -->
+        <section class="work" id="work">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-description">A curated index of projects spanning design, development, and
+                        content.</p>
+                    <div class="filter-tabs" id="projectFilters">
+                        <button type="button" class="filter-tab active" data-filter="all">All</button>
+                        <button type="button" class="filter-tab" data-filter="design">UX/UI Case Studies</button>
+                        <button type="button" class="filter-tab" data-filter="code">Development</button>
+                        <button type="button" class="filter-tab" data-filter="content">vlogs &amp; resources</button>
+                    </div>
+                </div>
+
+                <div class="work-grid" id="workGrid">
+                    <!-- Project 1: EcoDrop (UX Design) -->
+                    <div class="project-card tilt-card reveal" data-category="design">
+                        <div class="project-image-container">
+                            <img src="assets/project_ecodrop.png" alt="EcoDrop app design" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-tag">Figma</span>
+                                <span class="project-tag">UX Case Study</span>
+                            </div>
+                        </div>
+                        <div class="project-details tilt-inner">
+                            <div class="project-meta-info">
+                                <span class="project-role">Lead UX Designer</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">EcoDrop Sustainability App</h3>
+                            <p class="project-text">A gamified mobile application UI design helping users build
+                                eco-friendly water habits through clean data visualization and user-friendly tracker
+                                widgets.</p>
+                            <a href="#" class="project-link-action" target="_blank">View Figma Case Study <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: BrainBank (Fullstack Code) -->
+                    <div class="project-card tilt-card reveal delay-100" data-category="code">
+                        <div class="project-image-container">
+                            <img src="assets/project_brainbank.png" alt="BrainBank platform dashboard"
+                                class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">JS</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                        </div>
+                        <div class="project-details tilt-inner">
+                            <div class="project-meta-info">
+                                <span class="project-role">Web Developer</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">BrainBank Learning Platform</h3>
+                            <p class="project-text">A digital platform designed to help students organize, access, and
+                                share educational resources. It simplifies learning with structured materials and
+                                collaborative tools.</p>
+                            <a href="https://brainbank4u.vercel.app/" class="project-link-action" target="_blank">Visit
+                                Live Website<i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Instagram Reel Mini Vlog -->
+                    <div class="project-card tilt-card reveal delay-200" data-category="content">
+                        <div class="project-image-container">
+                            <img src="assets/project_dosa.png" alt="Dosa date vlog" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-tag">Instagram</span>
+                                <span class="project-tag">Mini Vlog</span>
+                            </div>
+                        </div>
+                        <div class="project-details tilt-inner">
+                            <div class="project-meta-info">
+                                <span class="project-role">Content Creator</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Cozy Dosa Date Mini Vlog</h3>
+                            <p class="project-text">An aesthetic lifestyle mini vlog capturing a cozy dosa date. Highlighting modern mobile videography, color grading, and creative storytelling for social media content. Reached thousands of views on Instagram.</p>
+                            <a href="https://www.instagram.com/reel/DOQ25JKiBD2/" class="project-link-action" target="_blank">Watch Reel on Instagram <i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Hubrave Agency (Creative Tech Agency) -->
+                    <div class="project-card tilt-card reveal delay-300" data-category="code design">
+                        <div class="project-image-container">
+                            <img src="assets/project_hubrave.png" alt="Hubrave Agency platform preview" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">Branding</span>
+                                <span class="project-tag">UX/UI</span>
+                            </div>
+                        </div>
+                        <div class="project-details tilt-inner">
+                            <div class="project-meta-info">
+                                <span class="project-role">Co-founder &amp; UX/Tech Lead</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Hubrave Agency</h3>
+                            <p class="project-text">A creative technology agency transforming ideas into digital experiences. Specializing in modern web development, brand systems, and high-fidelity UX prototyping.</p>
+                            <a href="https://hubrave.vercel.app/" class="project-link-action" target="_blank">Visit Agency Website <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wave Path Custom Component Section -->
+                <div class="wave-path-section reveal delay-300">
+                    <div class="wave-path-container">
+                        <!-- Wave Path Line -->
+                        <div class="wave-path-line">
+                            <div class="wave-path-trigger"></div>
+                            <svg class="wave-path-svg">
+                                <path id="wavePath" class="wave-path-curve" d="M0 100 Q400 100, 800 100"></path>
+                            </svg>
+                        </div>
+
+                        <!-- Text Description -->
+                        <div class="wave-path-footer">
+                            <p class="wave-path-label">Creative Philosophy</p>
+                            <p class="wave-path-text">
+                                Experience the synergy of art and engineering. Let the beauty of functional design inspire your next digital venture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Section (About Me) -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-description">An overview of my skills, focus areas, and key professional metrics.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Bento Box 1: Bio -->
+                    <div class="bento-card bento-bio reveal tilt-card">
+                        <div class="tilt-inner">
+                            <span class="bento-tag-mini">PROFILE</span>
+                            <h3>Creative &amp; Code</h3>
+                            <p>I specialize in building visually stunning, accessible interfaces. Transitioning from UX
+                                design to engineering has allowed me to write code with a strong visual intent and
+                                design with a technical grounding.</p>
+                            <p>I value clean structure, micro-animations, and semantic architectures. Let's make
+                                something beautiful.</p>
+                        </div>
+                    </div>
+
+                    <!-- Bento Box 2: Toolkit -->
+                    <div class="bento-card bento-tools reveal delay-100 tilt-card">
+                        <div class="tilt-inner">
+                            <span class="bento-tag-mini">STACK</span>
+                            <h3>Core Capabilities</h3>
+                            <div class="bento-tool-group">
+                                <span>UX/UI</span>
+                                <p>Figma, User Research, Design Systems, Prototyping</p>
+                            </div>
+                            <div class="bento-tool-group">
+                                <span>TECH</span>
+                                <p>React, Next.js, JavaScript, Node.js, SQL, Git &amp; GitHub</p>
+                            </div>
+                            <div class="bento-tool-group">
+                                <span>CREATIVE</span>
+                                <p>YouTube, Video Editing, Writing, Branding</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Box 3: Metrics -->
+                    <div class="bento-card bento-metrics reveal delay-200 tilt-card">
+                        <div class="tilt-inner bento-metrics-grid">
+                            <div class="metric-box">
+                                <span class="metric-num">2+</span>
+                                <span class="metric-lbl">Years Designing</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-num">10k+</span>
+                                <span class="metric-lbl">Subscribers</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-num">20+</span>
+                                <span class="metric-lbl">Web projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desk Pet Sandbox Section -->
+        <section class="sandbox-section" id="sandbox">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Codey's Sandbox</h2>
+                    <p class="section-description">Interact with my cute desk companion, Codey, in his interactive playground.</p>
+                </div>
+
+                <div class="sandbox-card reveal tilt-card">
+                    <div class="tilt-inner bento-pet-flex">
+                        <div class="pet-bio">
+                            <span class="bento-tag-mini">DESK PET</span>
+                            <h3>Codey's Playground</h3>
+                            <p>Codey resides in this modular sandbox. Poke him or select actions below to interact with him.</p>
+                            <div class="bento-cat-bubble">
+                                <p id="catBubbleText">"Meow! Welcome to the new layout!"</p>
+                            </div>
+                            <div class="bento-cat-controls">
+                                <button type="button" class="cat-btn-mini" id="catActionCode" title="Code"
+                                    aria-label="Code"><i data-lucide="terminal"></i></button>
+                                <button type="button" class="cat-btn-mini" id="catActionPet" title="Pet"
+                                    aria-label="Pet"><i data-lucide="heart"></i></button>
+                                <button type="button" class="cat-btn-mini" id="catActionNap" title="Nap"
+                                    aria-label="Nap"><i data-lucide="moon"></i></button>
+                                <button type="button" class="cat-btn-mini" id="catActionWiggle" title="Poke"
+                                    aria-label="Poke"><i data-lucide="smile"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="pet-visual">
+                            <div class="pixel-cat-stage-mini">
+                                <div class="particles-container" id="particlesContainer"></div>
+                                <div class="pixel-cat-container-mini" id="pixelCat">
+                                    <!-- Sitting Cat SVG -->
+                                    <svg class="cat-svg cat-state-sitting active" viewBox="0 0 16 16" width="144"
+                                        height="144" shape-rendering="crispEdges" id="catSittingSvg">
+                                        <path
+                                            d="M5 4h6v1H5V4zm-1 1h8v1H4V5zm-1 1h10v1H3V6zm-1 1h12v7H2V7zm1 7h10v1H3v-1z"
+                                            fill="#121016" />
+                                        <path d="M5 5h6v1H5V5zm-1 1h8v1H4V6zm-1 1h10v6H3V7zm1 6h8v1H4v-1z"
+                                            fill="#e8cfc1" />
+                                        <rect x="4" y="6" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="11" y="6" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="4" y="9" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="11" y="9" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="5" y="8" width="1" height="1" fill="#121016" />
+                                        <rect x="10" y="8" width="1" height="1" fill="#121016" />
+                                        <rect x="7" y="9" width="2" height="1" fill="#121016" />
+                                        <path d="M4 11h8v1H4v-1z" fill="#a8d0bc" />
+                                        <rect x="7" y="11" width="2" height="1" fill="#bab7e3" />
+                                        <rect x="4" y="13" width="2" height="1" fill="#ffffff" />
+                                        <rect x="10" y="13" width="2" height="1" fill="#ffffff" />
+                                    </svg>
+
+                                    <!-- Coding Cat SVG -->
+                                    <svg class="cat-svg cat-state-coding" viewBox="0 0 16 16" width="144" height="144"
+                                        shape-rendering="crispEdges" id="catCodingSvg">
+                                        <path d="M4 3h7v1H4V3zm-1 1h9v1H3V4zm-1 1h11v7H2V5zm1 7h10v1H3v-1z"
+                                            fill="#121016" />
+                                        <path d="M4 4h7v1H4V4zm-1 1h9v6H3V5zm1 6h8v1H4v-1z" fill="#e8cfc1" />
+                                        <rect x="3" y="5" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="11" y="5" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="3" y="8" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="11" y="8" width="1" height="1" fill="#bab7e3" />
+                                        <path d="M4 7h2v1H4V7zm5 0h2v1H9V7z" fill="#121016" />
+                                        <rect x="7" y="8" width="1" height="1" fill="#121016" />
+                                        <path d="M3 10h9v1H3v-1z" fill="#a8d0bc" />
+                                        <path d="M9 9h5v3H9V9z" fill="#2c273d" />
+                                        <path d="M10 10h3v1h-3v-1z" fill="#a8d0bc" />
+                                        <path d="M9 12h6v1H9v-1z" fill="#121016" />
+                                        <rect x="11" y="12" width="3" height="1" fill="#bab7e3" />
+                                        <rect x="8" y="11" width="1" height="1" fill="#ffffff"
+                                            class="coding-paw-left" />
+                                        <rect x="10" y="11" width="1" height="1" fill="#ffffff"
+                                            class="coding-paw-right" />
+                                    </svg>
+
+                                    <!-- Sleeping Cat SVG -->
+                                    <svg class="cat-svg cat-state-sleeping" viewBox="0 0 16 16" width="144"
+                                        height="144" shape-rendering="crispEdges" id="catSleepingSvg">
+                                        <path d="M2 6h12v1H2V6zm-1 1h14v6H1V7zm1 6h12v1H2v-1z" fill="#121016" />
+                                        <path d="M2 7h12v5H2V7zm1 5h10v1H3v-1z" fill="#e8cfc1" />
+                                        <path d="M3 9h2v1H3V9zm7 0h2v1h-2V9z" fill="#121016" />
+                                        <rect x="3" y="10" width="1" height="1" fill="#bab7e3" />
+                                        <rect x="11" y="10" width="1" height="1" fill="#bab7e3" />
+                                        <path d="M11 11h3v1h-3v-1z" fill="#2c273d" />
+                                    </svg>
+                                </div>
+                                <div class="cat-desk-line-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Journey Timeline -->
+        <section class="journey" id="journey">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Timeline &amp; Experience</h2>
+                    <p class="section-description">A timeline of my professional work in design, engineering, and
+                        content.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026 - Present</span>
+                            <h3>Full-Stack Engineer &amp; Designer</h3>
+                            <span class="timeline-org">Freelance &amp; Open Source</span>
+                            <p>Developing robust React and Next.js applications while building design systems for
+                                early-stage SaaS start-ups. Integrating UX research databases directly into frontend
+                                logic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal delay-100">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3>Content Creator &amp; Tech Educator</h3>
+                            <span class="timeline-org">YouTube &amp; Social Media</span>
+                            <p>Designing courses and producing high-aesthetic study/code-with-me streams to teach coding
+                                design systems and frontend fundamentals to over 10,000 students globally.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal delay-200">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - 2025</span>
+                            <h3>Lead UX/UI Designer</h3>
+                            <span class="timeline-org">Apex Digital agency</span>
+                            <p>Led user research sprints, created wireframes, and defined responsive layout
+                                architectures for e-commerce, banking, and sustainability mobile applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-grid-layout reveal">
+                    <div class="contact-sidebar">
+                        <h2>Let's build<br>something premium.</h2>
+                        <p>Have an exciting full-stack development project, high-fidelity UI design requirement, or want
+                            to collaborate on content? Drop a message!</p>
+                        <div class="contact-details-list">
+                            <div class="detail-item">
+                                <i data-lucide="mail"></i>
+                                <span>avni75837@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Lucknow, Uttar Pradesh, India (IST)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container tilt-card">
+                        <form class="contact-form-new tilt-inner" id="contactForm">
+                            <div class="form-row-new">
+                                <div class="form-group-new">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Your name">
+                                </div>
+                                <div class="form-group-new">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="Your email">
+                                </div>
+                            </div>
+                            <div class="form-group-new">
+                                <label for="subject">Project Focus</label>
+                                <select id="subject" name="subject">
+                                    <option value="ux-design">UX/UI Design System</option>
+                                    <option value="web-dev">Web App Development</option>
+                                    <option value="full-stack">Full-Stack Design + Code</option>
+                                    <option value="other">Say Hello</option>
+                                </select>
+                            </div>
+                            <div class="form-group-new">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    placeholder="Project details..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message <i
+                                    data-lucide="arrow-right"></i></button>
+                            <div class="form-success" id="formSuccessMessage">
+                                <i data-lucide="check-circle"></i> Message sent successfully!
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand / Info -->
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        <span class="logo-dot"></span>
+                        avni.design
+                    </a>
+                    <p class="footer-brand-text">
+                        UX/UI Designer &amp; Full Stack Developer bridging the gap between visual craft and functional code. Co-founder of Hubrave Agency.
+                    </p>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-nav-links">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="hubrave.html">Hubrave</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#sandbox">Sandbox</a></li>
+                        <li><a href="index.html#journey">Journey</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Featured Projects Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Featured Projects</h4>
+                    <ul class="footer-nav-links">
+                        <li><a href="index.html#work" target="_blank">EcoDrop App</a></li>
+                        <li><a href="https://brainbank4u.vercel.app/" target="_blank">BrainBank</a></li>
+                        <li><a href="index.html#work" target="_blank">Cozy Vlog</a></li>
+                        <li><a href="https://hubrave.vercel.app/" target="_blank">Hubrave Agency</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact / Socials -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Say Hello</h4>
+                    <p class="footer-contact-text">avni75837@gmail.com</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/crazylifeofavni/" aria-label="Instagram" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="GitHub" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/avnigupta7896/" aria-label="LinkedIn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Avni Gupta. Crafted with precise code &amp; high design intent.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Small Widget Cat -->
+    <div class="cat-widget" id="catWidget" title="Click to talk to Codey!">
+        <div class="cat-widget-bubble" id="catWidgetBubble">
+            Hi! Let's code!
+        </div>
+        <div class="cat-widget-icon" id="catWidgetIcon">
+            <svg viewBox="0 0 16 16" width="48" height="48" shape-rendering="crispEdges">
+                <path d="M5 4h6v1H5V4zm-1 1h8v1H4V5zm-1 1h10v1H3V6zm-1 1h12v7H2V7zm1 7h10v1H3v-1z" fill="#121016" />
+                <path d="M5 5h6v1H5V5zm-1 1h8v1H4V6zm-1 1h10v6H3V7zm1 6h8v1H4v-1z" fill="#e8cfc1" />
+                <rect x="5" y="8" width="1" height="1" fill="#121016" />
+                <rect x="10" y="8" width="1" height="1" fill="#121016" />
+                <rect x="7" y="9" width="2" height="1" fill="#121016" />
+                <rect x="4" y="6" width="1" height="1" fill="#bab7e3" />
+                <rect x="11" y="6" width="1" height="1" fill="#bab7e3" />
+                <rect x="4" y="9" width="1" height="1" fill="#bab7e3" />
+                <rect x="11" y="9" width="1" height="1" fill="#bab7e3" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Script files -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
