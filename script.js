@@ -342,8 +342,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 lucide.createIcons();
             }
 
-            // Simulate server request delay
-            setTimeout(() => {
+            const nameVal = document.getElementById('name').value;
+            const emailVal = document.getElementById('email').value;
+            const subjectSelect = document.getElementById('subject');
+            const subjectText = subjectSelect ? subjectSelect.options[subjectSelect.selectedIndex].text : '';
+            const messageVal = document.getElementById('message').value;
+
+            // Send actual email submission via FormSubmit.co
+            fetch("https://formsubmit.co/ajax/avni75837@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    name: nameVal,
+                    email: emailVal,
+                    project_focus: subjectText,
+                    message: messageVal,
+                    _subject: `New Portfolio Message from ${nameVal}`
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Form submission failed");
+                }
+                return response.json();
+            })
+            .then(data => {
                 contactForm.reset();
                 if (submitBtn) {
                     submitBtn.disabled = false;
@@ -353,6 +379,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Show success message
                 formSuccessMessage.style.display = 'flex';
+                formSuccessMessage.style.backgroundColor = '';
+                formSuccessMessage.style.color = '';
+                formSuccessMessage.style.borderColor = '';
+                formSuccessMessage.innerHTML = '<i data-lucide="check-circle"></i> Message sent successfully!';
+                lucide.createIcons();
                 
                 // Trigger cat widget reaction
                 showWidgetBubble("Yay! Message sent!");
@@ -363,9 +394,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     formSuccessMessage.style.display = 'none';
                 }, 5000);
-            }, 1500);
+            })
+            .catch(error => {
+                console.error("Error submitting form:", error);
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Message <i data-lucide="send"></i>';
+                    lucide.createIcons();
+                }
+                
+                // Show error message
+                formSuccessMessage.style.display = 'flex';
+                formSuccessMessage.style.backgroundColor = 'rgba(239, 68, 68, 0.1)';
+                formSuccessMessage.style.color = '#ef4444';
+                formSuccessMessage.style.borderColor = 'rgba(239, 68, 68, 0.2)';
+                formSuccessMessage.innerHTML = '<i data-lucide="alert-circle"></i> Failed to send message. Please try again.';
+                lucide.createIcons();
+
+                setTimeout(() => {
+                    formSuccessMessage.style.display = 'none';
+                    // Restore original class styles
+                    formSuccessMessage.style.backgroundColor = '';
+                    formSuccessMessage.style.color = '';
+                    formSuccessMessage.style.borderColor = '';
+                }, 5000);
+            });
         });
     }
+
 
     // --- MOTION GRAPHICS: SCROLL REVEAL (IntersectionObserver) ---
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
